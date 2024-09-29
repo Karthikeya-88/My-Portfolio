@@ -14,9 +14,9 @@ class App extends Component {
   render() {
     return (
       <>
-        <div className="ultimate-container d-flex flex-column justify-content-center align-items-center">
+        <div className="ultimate-container container-fluid d-flex flex-column justify-content-center align-items-center">
           <nav className="nav-container navbar bg-body-tertiary fixed-top navbar-light">
-            <div className="container-fluid d-flex align-items-center">
+            <div className="container-fluid">
               <h1 className="my-name navbar-brand">Karthikeya Doosa</h1>
               <button
                 className="navbar-toggler"
@@ -98,18 +98,18 @@ class App extends Component {
               </div>
             </div>
           </nav>
-          <div className="mb-4 pt-5 mt-2 expertise-offered">
+          <div className="mb-4 pt-5 mt-4 expertise-offered">
             <h2 className="text-center text-info">Expertise Offered</h2>
-            <div className="dev-desc">
+            <div className="expertise-types m-1">
               <p>Full-stack Development</p>
               <p>Back-end Development</p>
             </div>
-            <div className="dev-desc">
+            <div className="expertise-types m-1">
               <p>Front-end Development</p>
               <p>React Development</p>
             </div>
           </div>
-          <hr style={{ width: "50%" }} />
+          <hr style={{ width: "80%", border: "1px solid skyblue" }} />
           <div className="mb-2 p-2 justify-content" id="aboutMe">
             <h2 className="text-center text-info">About Me</h2>
             <ul className="about-me-ul justify-self m-1">
@@ -149,59 +149,74 @@ class App extends Component {
               </li>
             </ul>
           </div>
-          <hr style={{ width: "50%" }} />
+          <hr style={{ width: "80%", border: "1px solid skyblue" }} />
           <div className="my-skills-container mb-4 p-2" id="mySkills">
             <h2 className="text-center text-info">My Skills</h2>
-            <div className="carou-card" style={{ borderRadius: "20px" }}>
-              <div
-                id="carouselExampleInterval"
-                className="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div className="carousel-inner d-flex align-items-center">
-                  <div
-                    className="carousel-item active"
-                    style={{ width: "100%" }}
-                    data-bs-interval="2400"
-                  >
-                    <img
-                      src="https://ik.imagekit.io/6igcvccpb2/Back-end%20Development.png"
-                      className="carousel-image w-100"
-                      alt="Backend"
-                    />
-                  </div>
-                  <div
-                    className="carousel-item"
-                    style={{ width: "100%" }}
-                    data-bs-interval="2400"
-                  >
-                    <img
-                      src="https://ik.imagekit.io/6igcvccpb2/Databases.png"
-                      className="carousel-image w-100"
-                      alt="Databases"
-                    />
-                  </div>
-                  <div
-                    className="carousel-item"
-                    style={{ width: "100%" }}
-                    data-bs-interval="2400"
-                  >
-                    <img
-                      src="https://ik.imagekit.io/6igcvccpb2/Front-end%20Development.png"
-                      className="carousel-image w-100"
-                      alt="Frontend"
-                    />
-                  </div>
+            <div
+              id="carouselExampleInterval"
+              className="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div className="carousel-inner">
+                <div className="carousel-item active" data-bs-interval="2000">
+                  <img
+                    src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727620556/Back-end_Development_bfh3ma.png"
+                    className="d-block w-100"
+                    alt="Backend"
+                  />
+                </div>
+                <div className="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727620774/Databases_woyeqq.png"
+                    className="d-block w-100"
+                    alt="Database"
+                  />
+                </div>
+                <div className="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727620964/Front-end_Development_m9qjx8.png"
+                    className="d-block w-100"
+                    alt="Frontend"
+                  />
                 </div>
               </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <hr style={{ width: "50%" }} />
+          <hr style={{ width: "80%", border: "1px solid skyblue" }} />
           <div className="mb-2 p-4" id="myProjects">
             <h2 className="text-center text-info">My Projects</h2>
             <div>
               <h4 className="ml-4 mt-2">
-                <span style={{ fontFamily: "Bree Serif", color: "lawngreen" }}>
+                <span
+                  style={{
+                    fontFamily: "Bree Serif",
+                    color: "lawngreen",
+                  }}
+                >
                   Node Project:
                 </span>{" "}
                 Twitter Assignment{" "}
@@ -211,7 +226,7 @@ class App extends Component {
                   </a>
                 </span>{" "}
               </h4>
-              <ul>
+              <ul className="projects-ul text-justify">
                 <li>
                   Structured a scalable Node.js backend application for a
                   Twitter-inspired social media platform, featuring a
@@ -262,7 +277,7 @@ class App extends Component {
                   </a>
                 </span>{" "}
               </h4>
-              <ul>
+              <ul className="projects-ul text-justify">
                 <li>
                   Developed a scalable and efficient Todo List API utilizing
                   Node.js and Express.js, providing a comprehensive suite of
@@ -300,7 +315,7 @@ class App extends Component {
                   </a>
                 </span>{" "}
               </h4>
-              <ul>
+              <ul className="projects-ul text-justify">
                 <li>
                   Designed and developed a RESTful API using Node.js,
                   Express.js, and JavaScript for user authentication,
@@ -332,7 +347,7 @@ class App extends Component {
                   </span>{" "}
                   Personal Cosmos (My Own React Project){" "}
                 </h4>
-                <ul className="react-project-ul">
+                <ul className="react-project-ul text-justify">
                   <li>
                     I am delighted to introduce Personal Cosmos. This presents a
                     quartet of navigable routes: the welcoming home interface,
@@ -386,7 +401,7 @@ class App extends Component {
                   </span>{" "}
                   Covid19 Dashboard
                 </h4>
-                <ul className="react-project-ul">
+                <ul className="react-project-ul text-justify">
                   <li>
                     I conceptualized and developed a comprehensive COVID-19
                     tracking platform for India, providing in-depth state-level
@@ -431,7 +446,7 @@ class App extends Component {
                   </span>{" "}
                   Nxt Watch (YouTube Clone){" "}
                 </h4>
-                <ul className="react-project-ul">
+                <ul className="react-project-ul text-justify">
                   <li>
                     Composed a video streaming web application, "Nxt Watch,"
                     mirroring YouTube's core functionality, utilizing innovative
@@ -481,7 +496,7 @@ class App extends Component {
                   </span>{" "}
                   Jobby App (Job Portal Clone){" "}
                 </h4>
-                <ul className="react-project-ul">
+                <ul className="react-project-ul text-justify">
                   <li>
                     Designed, developed, and launched a comprehensive job search
                     platform, Jobby App, providing a unified and intuitive user
@@ -532,7 +547,7 @@ class App extends Component {
                   </span>{" "}
                   Nxt Trendz (E Commerce Clone - Amazon, Flipkart){" "}
                 </h4>
-                <ul className="react-project-ul">
+                <ul className="react-project-ul text-justify">
                   <li>
                     Created and established an e-commerce platform, leveraging
                     inspiration from industry leaders Amazon and Flipkart, to
@@ -569,7 +584,7 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <hr style={{ width: "50%" }} />
+          <hr style={{ width: "80%", border: "1px solid skyblue" }} />
           <div className="mb-2 p-2" id="myResume">
             <h2 className="text-center text-info">My Resume</h2>
             <h6 className="m-4" style={{ fontWeight: "600" }}>
@@ -581,7 +596,7 @@ class App extends Component {
                 <IoIosNavigate />
               </a>
             </h6>
-            <h4 style={{ fontWeight: "bold" }}>
+            <h4 className="mb-4" style={{ fontWeight: "bold" }}>
               I'm flexible regarding job types:
             </h4>
             <div className="open-to-job-type">
@@ -595,7 +610,7 @@ class App extends Component {
               <p>Internship</p>
             </div>
           </div>
-          <hr style={{ width: "50%" }} />
+          <hr style={{ width: "80%", border: "1px solid skyblue" }} />
           <div className="want-to-hire-container mb-2 p-2" id="hireMe">
             <h2 className="text-center text-info">Want to Hire Me</h2>
             <div className="button-icons-container mt-4">

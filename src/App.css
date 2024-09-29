@@ -65,10 +65,6 @@ ul {
   list-style: radial-gradient(#fff, lawngreen);
 }
 
-.react-project-ul {
-  list-style: radial-gradient(#fff, orange);
-}
-
 li {
   padding-left: 8px;
 }
@@ -129,17 +125,16 @@ h2 {
 .ultimate-container {
   background: #2d2d2d;
   color: #ffffff;
-  padding: 10px 20px 0px 20px;
   align-items: center;
 }
 
-.dev-desc {
+.expertise-types {
   display: flex;
   justify-content: space-between;
-  width: 80vw;
+  width: 90vw;
   align-items: center;
   color: #f6f8f8;
-  font-family: fantasy;
+  font-family: "Roboto";
   font-weight: bold;
   font-size: 24px;
 }
@@ -162,17 +157,13 @@ h2 {
   margin-top: 20px;
 }
 
-.carousel-image {
-  border-radius: 20px;
+.projects-ul {
+  font-size: 21px;
 }
 
-@media screen and (max-width: 976px) {
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
+.react-project-ul {
+  list-style: radial-gradient(#fff, orange);
+  font-size: 21px;
 }
 
 .project-container {
@@ -235,6 +226,112 @@ h2 {
 
 .button-icons {
   background: transparent;
-  font-size: 56px;
+  font-size: 48px;
   border: 0;
+  color: #0c10eb;
+}
+
+@media screen and (max-width: 816px) {
+  .nav-container {
+    display: flex;
+  }
+
+  .ultimate-container {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-width: 610px;
+  }
+
+  .about-me-ul {
+    font-size: medium;
+    font-family: "Roboto";
+    font-weight: 400;
+    list-style: disc;
+  }
+
+  .expertise-types {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f6f8f8;
+    font-family: "Roboto";
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .projects-ul {
+    font-size: 16px;
+  }
+
+  .react-project-ul {
+    font-size: 16px;
+  }
+
+  .project-image {
+    width: 220px;
+    height: 160px;
+    border-radius: 8px;
+    border: 2px solid #00ffa6;
+    margin: 0px 10px 0px 20px;
+  }
+
+  .open-to-job-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 300;
+  }
+
+  .want-to-hire-container {
+    background: #3d434c;
+    padding: 20px 30px 0px 40px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 20px;
+    color: #000;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  .form-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .form-element-input {
+    width: 90%;
+    border-radius: 10px;
+    padding: 8px 2px 8px 2px;
+    border: 0;
+  }
+
+  .button-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 410px;
+    background: #000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+    margin-bottom: 0px;
+  }
+
+  .button-icons {
+    background: transparent;
+    font-size: 36px;
+    border: 0;
+  }
 }
