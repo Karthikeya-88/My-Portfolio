@@ -240,7 +240,7 @@ h2 {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    min-width: 610px;
+    min-width: 440px;
   }
 
   .about-me-ul {
@@ -276,7 +276,7 @@ h2 {
   }
 
   .project-image {
-    width: 220px;
+    width: 320px;
     height: 160px;
     border-radius: 8px;
     border: 2px solid #00ffa6;
@@ -288,7 +288,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .want-to-hire-container {

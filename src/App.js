@@ -590,7 +590,7 @@ class App extends Component {
             <h6 className="m-4" style={{ fontWeight: "600" }}>
               Here is a link to My Resume:{" "}
               <a
-                href="https://drive.google.com/file/d/10lBOJhobJxoVi4HFBQG9j5BMwbioox2S/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1shJ5Lov_D-DT8kYC7fD9ub1o_bJdzqgn/view?usp=sharing"
                 style={{ color: "springgreen", fontSize: "40px" }}
               >
                 <IoIosNavigate />
