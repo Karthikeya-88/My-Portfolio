@@ -5,6 +5,7 @@ import { IoNavigateSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { VscGithub } from "react-icons/vsc";
+import { LiaCopyrightSolid } from "react-icons/lia";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -15,9 +16,12 @@ class App extends Component {
     return (
       <>
         <div className="ultimate-container container-fluid d-flex flex-column justify-content-center align-items-center">
-          <nav className="nav-container navbar bg-body-tertiary fixed-top navbar-light">
+          <nav className="nav-container navbar bg-body-tertiary fixed-top navbar-white">
             <div className="container-fluid">
-              <h1 className="my-name navbar-brand">Karthikeya Doosa</h1>
+              <h1 className="my-name name-reveal">
+                <span data-text="Karthikeya">Karthikeya </span>
+                <span data-text="Doosa">Doosa</span>
+              </h1>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -100,16 +104,38 @@ class App extends Component {
           </nav>
           <div className="mb-4 pt-5 mt-4 expertise-offered">
             <h2 className="text-center text-info">Expertise Offered</h2>
-            <div className="expertise-types m-1">
-              <p>Full-stack Development</p>
-              <p>Back-end Development</p>
+            <div
+              className="expertise-types m-1"
+              style={{ fontFamily: "Roboto" }}
+            >
+              <p className="text-reveal mt-1">
+                <span data-text="Full">Full </span>
+                <span data-text="Stack">Stack </span>
+                <span data-text="Development">Development</span>
+              </p>
+              <p className="text-reveal">
+                <span data-text="Full">Full </span>
+                <span data-text="Stack">Stack </span>
+                <span data-text="Engineer">Engineer</span>
+              </p>
             </div>
-            <div className="expertise-types m-1">
-              <p>Front-end Development</p>
-              <p>React Development</p>
+            <div
+              className="expertise-types m-1"
+              style={{ fontFamily: "Roboto" }}
+            >
+              <p className="text-reveal">
+                <span data-text="Back">Back </span>
+                <span data-text="End">End </span>
+                <span data-text="Development">Development</span>
+              </p>
+              <p className="text-reveal">
+                <span data-text="Front">Front </span>
+                <span data-text="End">End </span>
+                <span data-text="Development">Development</span>
+              </p>
             </div>
           </div>
-          <hr style={{ width: "80%", border: "1px solid skyblue" }} />
+          <hr style={{ width: "80%", border: "1px double skyblue" }} />
           <div className="mb-2 p-2 justify-content" id="aboutMe">
             <h2 className="text-center text-info">About Me</h2>
             <ul className="about-me-ul justify-self m-1">
@@ -118,16 +144,24 @@ class App extends Component {
                 Graduated with a Master of Business Administration (MBA) degree,
                 majoring in Human Resource Management, in 2024 and Under
                 Graduated with a Bachelor of Commerce (B.Com) degree in{" "}
-                <b>Computer Applications (CA)</b> in 2022, earning a commendable
-                GPA of 7.0
+                <b style={{ fontFamily: "Perpetua" }}>
+                  Computer Applications (CA)
+                </b>{" "}
+                in 2022, earning a commendable GPA of 7.0
               </li>
               <li>
                 Through my expertise in programming languages and in-depth
                 knowledge of frontend development, I have developed strong
                 problem-solving abilities. This expertise has fueled{" "}
-                <b> my enthusiasm for technological innovation</b> and guided my{" "}
-                <b>deliberate decision to pursue</b> a career in software
-                development
+                <b style={{ fontFamily: "Perpetua" }}>
+                  {" "}
+                  my enthusiasm for technological innovation
+                </b>{" "}
+                and guided my{" "}
+                <b style={{ fontFamily: "Perpetua" }}>
+                  deliberate decision to pursue
+                </b>{" "}
+                a career in software development
               </li>
               <li>
                 Upon familiarizing myself with NxtWave's programming and
@@ -136,20 +170,22 @@ class App extends Component {
                 journey in this discipline
               </li>
               <li>
-                Now, I'm a Dedicated MERN stack developer with a strong
-                foundation in Node.js, React.js, and MongoDB. Skilled in
-                designing and implementing efficient database solutions,
-                developing scalable server-side architectures, and crafting
-                responsive frontend interfaces
+                Now, I'm a Dedicated{" "}
+                <b style={{ fontFamily: "Perpetua" }}>MERN stack developer</b>{" "}
+                with a strong foundation in Node.js, React.js, and MongoDB.
+                Skilled in designing and implementing efficient database
+                solutions, developing scalable server-side architectures, and
+                crafting responsive frontend interfaces
               </li>
               <li>
-                Seeking a Junior Developer role in Full Stack, Backend, or
+                <b style={{ fontFamily: "Perpetua" }}>Searching for </b> a
+                Junior Developer/Engineer role in Full Stack, Backend, or
                 Frontend development where I can apply my skills, drive
                 technological advancements, and collaborate with a dynamic team
               </li>
             </ul>
           </div>
-          <hr style={{ width: "80%", border: "1px solid skyblue" }} />
+          <hr style={{ width: "80%", border: "1px double skyblue" }} />
           <div className="my-skills-container mb-4 p-2" id="mySkills">
             <h2 className="text-center text-info">My Skills</h2>
             <div
@@ -162,6 +198,7 @@ class App extends Component {
                   <img
                     src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727620556/Back-end_Development_bfh3ma.png"
                     className="d-block w-100"
+                    style={{ borderRadius: "8px" }}
                     alt="Backend"
                   />
                 </div>
@@ -169,6 +206,7 @@ class App extends Component {
                   <img
                     src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727620774/Databases_woyeqq.png"
                     className="d-block w-100"
+                    style={{ borderRadius: "8px" }}
                     alt="Database"
                   />
                 </div>
@@ -176,6 +214,7 @@ class App extends Component {
                   <img
                     src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727620964/Front-end_Development_m9qjx8.png"
                     className="d-block w-100"
+                    style={{ borderRadius: "8px" }}
                     alt="Frontend"
                   />
                 </div>
@@ -206,7 +245,7 @@ class App extends Component {
               </button>
             </div>
           </div>
-          <hr style={{ width: "80%", border: "1px solid skyblue" }} />
+          <hr style={{ width: "80%", border: "1px double skyblue" }} />
           <div className="mb-2 p-4" id="myProjects">
             <h2 className="text-center text-info">My Projects</h2>
             <div>
@@ -525,7 +564,7 @@ class App extends Component {
                     management, while preventing unauthorized access.
                   </li>
                   <li style={{ fontWeight: "bold" }}>
-                    UserName: henry & Password: henry_the_developer
+                    Username: henry & Password: henry_the_developer
                   </li>
                 </ul>
               </div>
@@ -569,7 +608,7 @@ class App extends Component {
                     availability of user data
                   </li>
                   <li style={{ fontWeight: "bold" }}>
-                    UserName: henry & Password: henry_the_developer
+                    Username: henry & Password: henry_the_developer
                   </li>
                 </ul>
               </div>
@@ -584,14 +623,14 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <hr style={{ width: "80%", border: "1px solid skyblue" }} />
+          <hr style={{ width: "80%", border: "1px double skyblue" }} />
           <div className="mb-2 p-2" id="myResume">
             <h2 className="text-center text-info">My Resume</h2>
             <h6 className="m-4" style={{ fontWeight: "600" }}>
               Here is a link to My Resume:{" "}
               <a
                 href="https://drive.google.com/file/d/1shJ5Lov_D-DT8kYC7fD9ub1o_bJdzqgn/view?usp=sharing"
-                style={{ color: "springgreen", fontSize: "40px" }}
+                className="resume-el"
               >
                 <IoIosNavigate />
               </a>
@@ -610,7 +649,7 @@ class App extends Component {
               <p>Internship</p>
             </div>
           </div>
-          <hr style={{ width: "80%", border: "1px solid skyblue" }} />
+          <hr style={{ width: "80%", border: "1px double skyblue" }} />
           <div className="want-to-hire-container mb-2 p-2" id="hireMe">
             <h2 className="text-center text-info">Want to Hire Me</h2>
             <div className="button-icons-container mt-4">
@@ -636,6 +675,15 @@ class App extends Component {
                 </a>
               </button>
             </div>
+          </div>
+          <div className="text-center text-white m-0 p-0 d-flex justify-content-center align-items-center">
+            <p style={{ fontFamily: "Bree serif" }}>
+              Copyright{" "}
+              <span>
+                <LiaCopyrightSolid />{" "}
+              </span>{" "}
+              2024 Karthikeya. All rights reserved.
+            </p>
           </div>
         </div>
       </>

@@ -23,27 +23,27 @@
 }
 
 #navbar-about:hover {
-  font-size: large;
+  font-size: larger;
   color: #000;
 }
 
 #navbar-skills:hover {
-  font-size: large;
+  font-size: larger;
   color: #000;
 }
 
 #navbar-projects:hover {
-  font-size: large;
+  font-size: larger;
   color: #000;
 }
 
 #navbar-resume:hover {
-  font-size: large;
+  font-size: larger;
   color: #000;
 }
 
 #navbar-hire-me:hover {
-  font-size: large;
+  font-size: larger;
   color: #000;
 }
 
@@ -55,6 +55,15 @@
 .local-anchor-el {
   font-family: "Bree serif";
   font-size: xxx-large;
+}
+
+.resume-el {
+  color: springgreen;
+  font-size: 40px;
+}
+
+.resume-el:hover {
+  color: gold;
 }
 
 * {
@@ -75,12 +84,6 @@ button:hover {
 
 a:hover {
   color: lime;
-}
-
-.my-name {
-  font-weight: 600;
-  font-size: xx-large;
-  font-family: "Book Antique";
 }
 
 h2 {
@@ -122,6 +125,12 @@ h2 {
   }
 }
 
+.my-name {
+  font-weight: 400;
+  font-size: x-large;
+  font-family: "Garamond";
+}
+
 .ultimate-container {
   background: #2d2d2d;
   color: #ffffff;
@@ -134,9 +143,58 @@ h2 {
   width: 90vw;
   align-items: center;
   color: #f6f8f8;
-  font-family: "Roboto";
   font-weight: bold;
   font-size: 24px;
+}
+
+.text-reveal {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  color: #2d2d2d;
+}
+
+.name-reveal {
+  font-family: "Book antique";
+  color: lime;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.text-reveal span {
+  position: relative;
+}
+
+.name-reveal span {
+  position: relative;
+}
+
+.text-reveal span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  animation: reveal 2s steps(100);
+  overflow: hidden;
+}
+
+.name-reveal span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(0, 0, 98);
+  animation: reveal 4s steps(80);
+  overflow: hidden;
+}
+
+@keyframes reveal {
+  0% {
+    width: 0%;
+  }
+  92% {
+    width: 100%;
+  }
 }
 
 .nav-container {
@@ -174,16 +232,16 @@ h2 {
 
 .project-image {
   width: 360px;
-  height: 200px;
+  height: 240px;
   border-radius: 12px;
   border: 2px solid #00ffa6;
-  margin: 0px 10px 0px 20px;
+  margin: 0px 2px 0px 16px;
 }
 
 .open-to-job-type {
   display: flex;
   justify-content: space-between;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .want-to-hire-container {
@@ -228,12 +286,17 @@ h2 {
   background: transparent;
   font-size: 48px;
   border: 0;
-  color: #0c10eb;
 }
 
 @media screen and (max-width: 816px) {
   .nav-container {
     display: flex;
+  }
+
+  .my-name {
+    font-weight: 800;
+    font-size: larger;
+    font-family: "Roboto";
   }
 
   .ultimate-container {
@@ -255,9 +318,14 @@ h2 {
     flex-direction: column;
     align-items: center;
     color: #f6f8f8;
-    font-family: "Roboto";
     font-size: 16px;
     flex-wrap: wrap;
+  }
+
+  .text-reveal {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #2d2d2d;
   }
 
   .project-container {
@@ -276,8 +344,8 @@ h2 {
   }
 
   .project-image {
-    width: 320px;
-    height: 160px;
+    width: 20pc;
+    height: 10pc;
     border-radius: 8px;
     border: 2px solid #00ffa6;
     margin: 0px 10px 0px 20px;
@@ -288,7 +356,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .want-to-hire-container {
