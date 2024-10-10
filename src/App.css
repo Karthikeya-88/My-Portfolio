@@ -88,6 +88,7 @@ a:hover {
 
 h2 {
   font-family: "Book antique";
+  font-weight: 4000;
 }
 
 .App-logo {
@@ -206,6 +207,15 @@ h2 {
   margin-top: 20px;
 }
 
+.experience-header {
+  font-size: 28px;
+  color: #6535ea;
+}
+
+.experience-li {
+  font-size: 22px;
+}
+
 .projects-ul {
   font-size: 21px;
 }
@@ -221,9 +231,14 @@ h2 {
   align-items: center;
 }
 
+.project-title {
+  text-align: center;
+  font-size: 28px;
+}
+
 .project-image {
-  width: 360px;
-  height: 240px;
+  width: 340px;
+  height: 220px;
   border-radius: 12px;
   border: 2px solid #00ffa6;
   margin: 0px 2px 0px 16px;
@@ -285,10 +300,6 @@ h2 {
 }
 
 @media screen and (max-width: 866px) {
-  * {
-    font-family: "Roboto";
-  }
-
   .nav-container {
     display: flex;
   }
@@ -327,6 +338,14 @@ h2 {
     color: #2d2d2d;
   }
 
+  .experience-header {
+    font-size: medium;
+  }
+
+  .experience-li {
+    font-size: 16px;
+  }
+
   .project-container {
     display: flex;
     flex-direction: column;
@@ -336,6 +355,7 @@ h2 {
 
   .project-title {
     font-size: 20px;
+    text-align: center;
   }
 
   .projects-ul {
@@ -347,7 +367,7 @@ h2 {
   }
 
   .project-image {
-    width: 20pc;
+    width: 22pc;
     height: 10pc;
     border-radius: 8px;
     border: 2px solid #00ffa6;
@@ -355,7 +375,7 @@ h2 {
   }
 
   .resume-text {
-    font-size: small;
+    font-size: large;
   }
 
   .resume-el {
@@ -365,8 +385,8 @@ h2 {
 
   .open-to-job-type {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     font-weight: 500;
   }
@@ -374,7 +394,7 @@ h2 {
   .want-to-hire-container {
     background: #3d434c;
     padding: 20px 30px 0px 40px;
-    border-top-left-radius: 80px;
+    border-top-left-radius: 100px;
     border-top-right-radius: 20px;
     color: #000;
     margin-top: 40px;

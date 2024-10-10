@@ -58,11 +58,30 @@ function App() {
                   <li className="nav-item">
                     <a
                       className="local-anchor-el nav-link"
+                      href="#myResume"
+                      id="navbar-resume"
+                    >
+                      Check My Resume
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a
+                      className="local-anchor-el nav-link"
                       aria-current="page"
                       href="#mySkills"
                       id="navbar-skills"
                     >
                       My Skills
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a
+                      className="local-anchor-el nav-link"
+                      aria-current="page"
+                      href="#myExperience"
+                      id="navbar-skills"
+                    >
+                      Experience
                     </a>
                   </li>
                   <li className="nav-item">
@@ -74,15 +93,7 @@ function App() {
                       My Projects
                     </a>
                   </li>
-                  <li className="nav-item">
-                    <a
-                      className="local-anchor-el nav-link"
-                      href="#myResume"
-                      id="navbar-resume"
-                    >
-                      Check My Resume
-                    </a>
-                  </li>
+
                   <li className="nav-item">
                     <a
                       className="local-anchor-el nav-link"
@@ -124,8 +135,8 @@ function App() {
             </p>
           </div>
         </div>
-        <hr style={{ width: "80%", border: "1px double skyblue" }} />
-        <div className="mb-2 p-2 justify-content" id="aboutMe">
+        <hr style={{ width: "80%", border: "2px solid seashell" }} />
+        <div className="mb-2 p-2 text-white rounded" id="aboutMe">
           <h2 className="text-center text-info">About Me</h2>
           <ul className="about-me-ul justify-self m-1">
             <li>
@@ -174,7 +185,52 @@ function App() {
             </li>
           </ul>
         </div>
-        <hr style={{ width: "80%", border: "1px double skyblue" }} />
+        <hr style={{ width: "80%", border: "2px solid seashell" }} />
+        <div
+          className="mb-2 p-4 text-dark rounded border border-light"
+          id="myResume"
+          style={{ backgroundColor: "#e7e5e4", width: "94vw" }}
+        >
+          <h2 className="text-center text-info">My Resume</h2>
+          <h6
+            className="m-4 resume-text text-center"
+            style={{ fontWeight: "600" }}
+          >
+            Here is a link to My Resume:{" "}
+            <a
+              href="https://drive.google.com/file/d/1f3c-z-CBXr1zy70OBdo7p0eS555liY0M/view?usp=drive_link"
+              className="resume-el"
+            >
+              <IoIosNavigate />
+            </a>
+          </h6>
+          <div className="text-center pb-2">
+            <marquee
+              behavior="scroll"
+              direction="right"
+              scrollamount="8"
+              width="40%"
+            >
+              <h4 className="text-center text-warning">Open to Relocation</h4>
+            </marquee>
+          </div>
+          <div>
+            <h4 className="mb-3 text-center">
+              I'm flexible regarding job types:
+            </h4>
+            <div className="open-to-job-type">
+              <p>Freelance</p>
+              <p>Full Time</p>
+              <p>Temporary</p>
+            </div>
+            <div className="open-to-job-type">
+              <p>Part-time</p>
+              <p>Contract</p>
+              <p>Internship</p>
+            </div>
+          </div>
+        </div>
+        <hr style={{ width: "80%", border: "2px solid seashell" }} />
         <div className="my-skills-container mb-4 p-2" id="mySkills">
           <h2 className="text-center text-info">My Skills</h2>
           <div
@@ -234,11 +290,46 @@ function App() {
             </button>
           </div>
         </div>
-        <hr style={{ width: "80%", border: "1px double skyblue" }} />
+        <hr style={{ width: "80%", border: "2px solid seashell" }} />
+        <div
+          className="mb-2 p-2 text-dark rounded border border-light"
+          style={{ backgroundColor: "#e7e5e4", width: "94vw" }}
+          id="myExperience"
+        >
+          <h2 className="text-center text-info">Learning Experience</h2>
+          <div className="d-flex justify-content-between text-center pl-4 pr-4 p-3 w-100">
+            <h5 className="experience-header">
+              <b>MERN Stack Developer - Nxtwave</b>
+            </h5>
+            <h5 className="d-block d-sm-block d-md-block d-lg-none d-xl-none experience-header">
+              <b>2023 - 2024</b>
+            </h5>
+            <h5 className="d-none d-lg-block d-xl-block experience-header">
+              <b>May 2023 - July 2024</b>
+            </h5>
+          </div>
+          <ul style={{ listStyle: "disc" }} className="text-black">
+            <li className="text-justify experience-li">
+              Developed high-performance MERN stack applications, integrating
+              JavaScript, Node.js, React.js, and MongoDB, with proficiency in
+              Python, SQLite, HTML, and CSS.
+            </li>
+            <li className="text-justify experience-li">
+              Enhanced problem-solving skills with programming languages and
+              expanded expertise in backend development.
+            </li>
+            <li className="text-justify experience-li">
+              Successfully designed and implemented efficient database solutions
+              and responsive frontend interfaces, demonstrating expertise in
+              backend development and problem-solving.{" "}
+            </li>
+          </ul>
+        </div>
+        <hr style={{ width: "80%", border: "2px solid seashell" }} />
         <div className="mb-2 p-4" id="myProjects">
           <h2 className="text-center text-info">My Projects</h2>
           <div>
-            <h4 className="ml-4 mt-2">
+            <h4 className="ml-4 mt-2 project-title">
               <span
                 style={{
                   fontFamily: "Bree Serif",
@@ -294,7 +385,7 @@ function App() {
             </ul>
           </div>
           <div>
-            <h4 className="ml-4 mt-2">
+            <h4 className="ml-4 mt-2 project-title">
               <span style={{ fontFamily: "Bree Serif", color: "lawngreen" }}>
                 Node JS Project:
               </span>{" "}
@@ -332,7 +423,7 @@ function App() {
             </ul>
           </div>
           <div>
-            <h4 className="ml-4 mt-2">
+            <h4 className="ml-4 mt-2 project-title">
               <span style={{ fontFamily: "Bree Serif", color: "lawngreen" }}>
                 Node JS Project:
               </span>{" "}
@@ -369,7 +460,7 @@ function App() {
           </div>
           <div className="project-container">
             <div>
-              <h4 className="ml-4 mt-2">
+              <h4 className="ml-4 mt-2 project-title">
                 <span style={{ fontFamily: "Bree Serif", color: "orange" }}>
                   React JS App:
                 </span>{" "}
@@ -411,7 +502,7 @@ function App() {
               </ul>
             </div>
             <div>
-              <marquee behavior="slide" scrollamount="8" width="380px">
+              <marquee behavior="slide" scrollamount="4" width="380px">
                 <a href="https://karthikeya-personal-cosmos-6fl3.vercel.app/">
                   <img
                     src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727520804/Screenshot_1072_f7m2hk.png"
@@ -424,7 +515,7 @@ function App() {
           </div>
           <div className="project-container">
             <div>
-              <h4 className="ml-4 mt-2">
+              <h4 className="ml-4 mt-2 project-title">
                 <span style={{ fontFamily: "Bree Serif", color: "orange" }}>
                   React JS App:
                 </span>{" "}
@@ -458,7 +549,7 @@ function App() {
               </ul>
             </div>
             <div>
-              <marquee behavior="slide" scrollamount="8" width="380px">
+              <marquee behavior="slide" scrollamount="4" width="380px">
                 <a href="https://karthikcoviddb.ccbp.tech/">
                   <img
                     src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727588556/Screenshot_1076_ljplim.png"
@@ -471,7 +562,7 @@ function App() {
           </div>
           <div className="project-container">
             <div>
-              <h4 className="ml-4 mt-2">
+              <h4 className="ml-4 mt-2 project-title">
                 <span style={{ fontFamily: "Bree Serif", color: "orange" }}>
                   React JS App:
                 </span>{" "}
@@ -509,7 +600,7 @@ function App() {
               </ul>
             </div>
             <div>
-              <marquee behavior="slide" scrollamount="8" width="380px">
+              <marquee behavior="slide" scrollamount="4" width="380px">
                 <a href="https://nxt-watch-karthikeya.netlify.app/">
                   <img
                     src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727521802/Screenshot_1074_gtzcth.png"
@@ -522,7 +613,7 @@ function App() {
           </div>
           <div className="project-container">
             <div>
-              <h4 className="ml-4 mt-2">
+              <h4 className="ml-4 mt-2 project-title">
                 <span style={{ fontFamily: "Bree Serif", color: "orange" }}>
                   React JS App:
                 </span>{" "}
@@ -560,7 +651,7 @@ function App() {
               </ul>
             </div>
             <div>
-              <marquee behavior="slide" scrollamount="8" width="380px">
+              <marquee behavior="slide" scrollamount="4" width="380px">
                 <a href="https://karthijobbyapp.ccbp.tech/">
                   <img
                     src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727595871/Screenshot_1077_jlso4c.png"
@@ -573,7 +664,7 @@ function App() {
           </div>
           <div className="project-container">
             <div>
-              <h4 className="ml-4 mt-2">
+              <h4 className="ml-4 mt-2 project-title">
                 <span style={{ fontFamily: "Bree Serif", color: "orange" }}>
                   React JS App:
                 </span>{" "}
@@ -605,7 +696,7 @@ function App() {
               </ul>
             </div>
             <div>
-              <marquee behavior="slide" scrollamount="8" width="380px">
+              <marquee behavior="slide" scrollamount="4" width="380px">
                 <a href="https://karthiknxtrends.ccbp.tech/">
                   <img
                     src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727522986/Screenshot_1075_wmdmic.png"
@@ -617,47 +708,7 @@ function App() {
             </div>
           </div>
         </div>
-        <hr style={{ width: "80%", border: "1px double skyblue" }} />
-        <div className="mb-2 p-2" id="myResume">
-          <h2 className="text-center text-info">My Resume</h2>
-          <h6 className="m-4 resume-text" style={{ fontWeight: "600" }}>
-            Here is a link to My Resume:{" "}
-            <a
-              href="https://drive.google.com/file/d/1shJ5Lov_D-DT8kYC7fD9ub1o_bJdzqgn/view?usp=sharing"
-              className="resume-el"
-            >
-              <IoIosNavigate />
-            </a>
-          </h6>
-          <div className="text-center pb-3">
-            <marquee
-              behavior="scroll"
-              direction="left"
-              scrollamount="8"
-              width="60%"
-            >
-              <h4 className="text-center text-warning bg-black">
-                Open to Relocation
-              </h4>
-            </marquee>
-          </div>
-          <div>
-            <h4 className="mb-4" style={{ fontWeight: "bold" }}>
-              I'm flexible regarding job types:
-            </h4>
-            <div className="open-to-job-type">
-              <p>Freelance</p>
-              <p>Full Time</p>
-              <p>Temporary</p>
-            </div>
-            <div className="open-to-job-type">
-              <p>Part-time</p>
-              <p>Contract</p>
-              <p>Internship</p>
-            </div>
-          </div>
-        </div>
-        <hr style={{ width: "80%", border: "1px double skyblue" }} />
+        <hr style={{ width: "80%", border: "2px solid seashell" }} />
         <div className="want-to-hire-container mb-2 p-2" id="hireMe">
           <h2 className="text-center text-info">Want to Hire Me</h2>
           <div className="button-icons-container mt-4">
