@@ -13,7 +13,10 @@ function App() {
       <div className="ultimate-container container-fluid d-flex flex-column justify-content-center align-items-center">
         <nav className="nav-container navbar bg-body-tertiary fixed-top navbar-white">
           <div className="container-fluid">
-            <h1 className="my-name name-reveal">
+            <h1
+              className="my-name name-reveal"
+              style={{ fontFamily: "Perpetua" }}
+            >
               <span data-text="Karthikeya">Karthikeya </span>
               <span data-text="Doosa">Doosa</span>
             </h1>
@@ -136,7 +139,7 @@ function App() {
           </div>
         </div>
         <hr style={{ width: "80%", border: "2px solid seashell" }} />
-        <div className="mb-2 p-2 text-white rounded" id="aboutMe">
+        <div className="about-me-container mb-2 p-2 rounded" id="aboutMe">
           <h2 className="text-center text-info">About Me</h2>
           <ul className="about-me-ul justify-self m-1">
             <li>
@@ -211,7 +214,9 @@ function App() {
               scrollamount="8"
               width="40%"
             >
-              <h4 className="text-center text-warning">Open to Relocation</h4>
+              <h4 className="text-center text-warning open-to-relocation">
+                Open to Relocation
+              </h4>
             </marquee>
           </div>
           <div>
@@ -298,13 +303,16 @@ function App() {
         >
           <h2 className="text-center text-info">Learning Experience</h2>
           <div className="d-flex justify-content-between text-center pl-4 pr-4 p-3 w-100">
-            <h5 className="experience-header">
+            <h5 className="d-block d-sm-block d-md-none d-lg-none d-xl-none experience-header">
+              <b>MERN Stack Developer</b>
+            </h5>
+            <h5 className="d-none d-md-block d-lg-block d-xl-block experience-header">
               <b>MERN Stack Developer - Nxtwave</b>
             </h5>
-            <h5 className="d-block d-sm-block d-md-block d-lg-none d-xl-none experience-header">
+            <h5 className="d-block d-sm-block d-md-none d-lg-none d-xl-none experience-header">
               <b>2023 - 2024</b>
             </h5>
-            <h5 className="d-none d-lg-block d-xl-block experience-header">
+            <h5 className="d-none d-md-block d-lg-block d-xl-block experience-header">
               <b>May 2023 - July 2024</b>
             </h5>
           </div>
@@ -709,7 +717,11 @@ function App() {
           </div>
         </div>
         <hr style={{ width: "80%", border: "2px solid seashell" }} />
-        <div className="want-to-hire-container mb-2 p-2" id="hireMe">
+        <div
+          className="want-to-hire-container mb-2 p-2 pb-1"
+          id="hireMe"
+          style={{ backgroundColor: "#e7e5e4" }}
+        >
           <h2 className="text-center text-info">Want to Hire Me</h2>
           <div className="button-icons-container mt-4">
             <button type="button" className="button-icons">

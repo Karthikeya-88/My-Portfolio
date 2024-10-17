@@ -52,6 +52,10 @@
   color: #fff;
 }
 
+.anchor-el:hover {
+  color: rgb(8, 227, 216);
+}
+
 .local-anchor-el {
   font-family: "Bree serif";
   font-size: xxx-large;
@@ -120,11 +124,10 @@ h2 {
 .my-name {
   font-weight: 400;
   font-size: x-large;
-  font-family: "Garamond";
 }
 
 .ultimate-container {
-  background: #2d2d2d;
+  background: #00161d;
   color: #ffffff;
   align-items: center;
 }
@@ -142,12 +145,12 @@ h2 {
 .text-reveal {
   font-size: 24px;
   font-family: Arial, sans-serif;
-  color: #2d2d2d;
+  color: #00161d;
 }
 
 .name-reveal {
   font-family: "Book antique";
-  color: rgb(0, 200, 0);
+  color: #14c600;
   text-decoration: underline;
   font-weight: bolder;
 }
@@ -175,7 +178,7 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  color: rgb(0, 0, 180);
+  color: #020076;
   animation: reveal 3200ms steps(100);
   overflow: hidden;
 }
@@ -195,11 +198,22 @@ h2 {
   padding: 0px;
 }
 
+.about-me-container {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.8)),
+    url("https://t4.ftcdn.net/jpg/04/61/47/03/240_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg");
+  background-size: cover;
+}
+
 .about-me-ul {
   font-size: larger;
   font-family: "Roboto";
   font-weight: 500;
   list-style: disc;
+  color: #fff;
+}
+
+.open-to-relocation {
+  text-shadow: 1px 0px #0f0000dd;
 }
 
 .my-skills-container {
@@ -217,12 +231,12 @@ h2 {
 }
 
 .projects-ul {
-  font-size: 21px;
+  font-size: 22px;
 }
 
 .react-project-ul {
   list-style: radial-gradient(#fff, orange);
-  font-size: 21px;
+  font-size: 22px;
 }
 
 .project-container {
@@ -300,6 +314,12 @@ h2 {
 }
 
 @media screen and (max-width: 866px) {
+  .about-me-container {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.2)),
+      url("https://res.cloudinary.com/dnmyyqfhs/image/upload/v1729180832/240_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU_zzvovx.jpg");
+    background-size: cover;
+  }
+
   .nav-container {
     display: flex;
   }
@@ -335,11 +355,12 @@ h2 {
   .text-reveal {
     font-size: 16px;
     font-family: Arial, sans-serif;
-    color: #2d2d2d;
+    color: #00161d;
   }
 
   .experience-header {
-    font-size: medium;
+    font-size: 18px;
+    font-weight: bolder;
   }
 
   .experience-li {
