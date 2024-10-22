@@ -25,26 +25,31 @@
 #navbar-about:hover {
   font-size: larger;
   color: #000;
+  font-weight: bold;
 }
 
 #navbar-skills:hover {
   font-size: larger;
   color: #000;
+  font-weight: bold;
 }
 
 #navbar-projects:hover {
   font-size: larger;
   color: #000;
+  font-weight: bold;
 }
 
 #navbar-resume:hover {
   font-size: larger;
   color: #000;
+  font-weight: bold;
 }
 
 #navbar-hire-me:hover {
   font-size: larger;
   color: #000;
+  font-weight: bold;
 }
 
 .anchor-el {
@@ -68,6 +73,7 @@
 
 .resume-el:hover {
   color: gold;
+  font-size: 40px;
 }
 
 * {
@@ -124,6 +130,7 @@ h2 {
 .my-name {
   font-weight: 400;
   font-size: x-large;
+  text-align: justify;
 }
 
 .ultimate-container {
@@ -199,7 +206,7 @@ h2 {
 }
 
 .about-me-container {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.8)),
     url("https://t4.ftcdn.net/jpg/04/61/47/03/240_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg");
   background-size: cover;
 }
@@ -210,6 +217,7 @@ h2 {
   font-weight: 500;
   list-style: disc;
   color: #fff;
+  text-align: justify;
 }
 
 .open-to-relocation {
@@ -228,15 +236,19 @@ h2 {
 
 .experience-li {
   font-size: 22px;
+  text-align: justify;
+  padding: 4px 10px 4px 10px;
 }
 
 .projects-ul {
   font-size: 22px;
+  text-align: justify;
 }
 
 .react-project-ul {
   list-style: radial-gradient(#fff, orange);
   font-size: 22px;
+  text-align: justify;
 }
 
 .project-container {
@@ -251,11 +263,13 @@ h2 {
 }
 
 .project-image {
-  width: 320px;
+  width: 340px;
   height: 200px;
-  border-radius: 10px;
-  border: 2px solid #00ffa6;
-  margin: 0px 2px 0px 16px;
+  border-radius: 12px;
+  border: 3px solid #00ffa6;
+  margin-left: 18px;
+  margin-right: 0px;
+  padding: 0px;
 }
 
 .resume-text {
@@ -315,7 +329,7 @@ h2 {
 
 @media screen and (max-width: 866px) {
   .about-me-container {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.2)),
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.2)),
       url("https://res.cloudinary.com/dnmyyqfhs/image/upload/v1729180832/240_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU_zzvovx.jpg");
     background-size: cover;
   }
@@ -327,6 +341,7 @@ h2 {
   .my-name {
     font-weight: 800;
     font-size: larger;
+    text-align: start;
   }
 
   .ultimate-container {
@@ -341,6 +356,7 @@ h2 {
     font-family: "Roboto";
     font-weight: 400;
     list-style: disc;
+    text-align: start;
   }
 
   .expertise-types {
@@ -359,12 +375,14 @@ h2 {
   }
 
   .experience-header {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bolder;
   }
 
   .experience-li {
-    font-size: 16px;
+    font-size: 18px;
+    text-align: start;
+    padding: 4px 10px 4px 10px;
   }
 
   .project-container {
@@ -380,11 +398,13 @@ h2 {
   }
 
   .projects-ul {
-    font-size: 16px;
+    font-size: 18px;
+    text-align: start;
   }
 
   .react-project-ul {
-    font-size: 16px;
+    font-size: 18px;
+    text-align: start;
   }
 
   .project-image {

@@ -141,7 +141,7 @@ function App() {
         <hr style={{ width: "80%", border: "2px solid seashell" }} />
         <div className="about-me-container mb-2 p-2 rounded" id="aboutMe">
           <h2 className="text-center text-info">About Me</h2>
-          <ul className="about-me-ul justify-self m-1">
+          <ul className="about-me-ul m-1">
             <li>
               I'm Karthikeya from Karimnagar, Telangana. I have recently
               Graduated with a Master of Business Administration (MBA) degree,
@@ -201,7 +201,7 @@ function App() {
           >
             Here is a link to My Resume:{" "}
             <a
-              href="https://drive.google.com/file/d/1f3c-z-CBXr1zy70OBdo7p0eS555liY0M/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1f3c-z-CBXr1zy70OBdo7p0eS555liY0M/view?usp=sharing"
               className="resume-el"
             >
               <IoIosNavigate />
@@ -297,7 +297,7 @@ function App() {
         </div>
         <hr style={{ width: "80%", border: "2px solid seashell" }} />
         <div
-          className="mb-2 p-2 text-dark rounded border border-light"
+          className="mb-2 p-4 text-dark rounded border border-light"
           style={{ backgroundColor: "#e7e5e4", width: "94vw" }}
           id="myExperience"
         >
@@ -317,19 +317,17 @@ function App() {
             </h5>
           </div>
           <ul style={{ listStyle: "disc" }} className="text-black">
-            <li className="text-justify experience-li">
+            <li className="experience-li">
               Developed high-performance MERN stack applications, integrating
               JavaScript, Node.js, React.js, and MongoDB, with proficiency in
-              Python, SQLite, HTML, and CSS.
+              Programming with Python, SQLite, HTML & CSS.
             </li>
-            <li className="text-justify experience-li">
-              Enhanced problem-solving skills with programming languages and
-              expanded expertise in backend development.
-            </li>
-            <li className="text-justify experience-li">
-              Successfully designed and implemented efficient database solutions
-              and responsive frontend interfaces, demonstrating expertise in
-              backend development and problem-solving.{" "}
+            <li className="experience-li">
+              Enhanced my problem-solving skills with programming languages and
+              expanded my expertise in backend development. Successfully
+              designed and implemented efficient database solutions and
+              responsive frontend interfaces, demonstrating expertise in backend
+              development and problem-solving.{" "}
             </li>
           </ul>
         </div>
@@ -353,7 +351,7 @@ function App() {
                 </a>
               </span>{" "}
             </h4>
-            <ul className="projects-ul text-justify">
+            <ul className="projects-ul">
               <li>
                 Structured a scalable Node.js backend application for a
                 Twitter-inspired social media platform, featuring a
@@ -404,7 +402,7 @@ function App() {
                 </a>
               </span>{" "}
             </h4>
-            <ul className="projects-ul text-justify">
+            <ul className="projects-ul">
               <li>
                 Developed a scalable and efficient Todo List API utilizing
                 Node.js and Express.js, providing a comprehensive suite of
@@ -442,7 +440,7 @@ function App() {
                 </a>
               </span>{" "}
             </h4>
-            <ul className="projects-ul text-justify">
+            <ul className="projects-ul">
               <li>
                 Designed and developed a RESTful API using Node.js, Express.js,
                 and JavaScript for user authentication, registration, and
@@ -474,7 +472,7 @@ function App() {
                 </span>{" "}
                 Personal Cosmos (My Own React Project){" "}
               </h4>
-              <ul className="react-project-ul text-justify">
+              <ul className="react-project-ul">
                 <li>
                   I am delighted to introduce Personal Cosmos. This presents a
                   quartet of navigable routes: the welcoming home interface, the
@@ -507,6 +505,7 @@ function App() {
                   users to easily remove items from their cart list. Deployed
                   the website using Vercel
                 </li>
+                <li>Spanned a 6-Day development period</li>
               </ul>
             </div>
             <div>
@@ -529,7 +528,7 @@ function App() {
                 </span>{" "}
                 Covid19 Dashboard
               </h4>
-              <ul className="react-project-ul text-justify">
+              <ul className="react-project-ul">
                 <li>
                   I conceptualized and developed a comprehensive COVID-19
                   tracking platform for India, providing in-depth state-level
@@ -554,6 +553,7 @@ function App() {
                   informed decision-making and promotes public awareness of
                   COVID-19
                 </li>
+                <li>Had a development duration of 16 days</li>
               </ul>
             </div>
             <div>
@@ -576,7 +576,7 @@ function App() {
                 </span>{" "}
                 Nxt Watch (YouTube Clone){" "}
               </h4>
-              <ul className="react-project-ul text-justify">
+              <ul className="react-project-ul">
                 <li>
                   Composed a video streaming web application, "Nxt Watch,"
                   mirroring YouTube's core functionality, utilizing innovative
@@ -600,7 +600,7 @@ function App() {
                   Make use of React Router for seamless client-side routing and
                   navigation. Elaborated a detailed video view component with
                   interactive features: Like/Dislike buttons and Save Video
-                  functionality. Deployed using Netlify
+                  functionality. Developed over 8 days, Deployed using Netlify
                 </li>
                 <li style={{ fontWeight: "bold" }}>
                   Username: rahul & Password: rahul@2021
@@ -627,7 +627,7 @@ function App() {
                 </span>{" "}
                 Jobby App (Job Portal Clone){" "}
               </h4>
-              <ul className="react-project-ul text-justify">
+              <ul className="react-project-ul">
                 <li>
                   Designed, developed, and launched a comprehensive job search
                   platform, Jobby App, providing a unified and intuitive user
@@ -645,13 +645,14 @@ function App() {
                   data, utilizing JWT tokens for secure authentication, REST API
                   calls for encrypted data exchange, and local storage security
                   measures to prevent unauthorized access, thereby ensuring the
-                  highest level of user data protection.
+                  highest level of user data protection
                 </li>
                 <li>
                   {" "}
                   Implemented secure client-side routing using React Router,
                   ensuring protected routes and persistent login state
-                  management, while preventing unauthorized access.
+                  management, while preventing unauthorized access. Spanned a
+                  5-Day development period
                 </li>
                 <li style={{ fontWeight: "bold" }}>
                   Username: henry & Password: henry_the_developer
@@ -678,7 +679,7 @@ function App() {
                 </span>{" "}
                 Nxt Trendz (E Commerce Clone - Amazon, Flipkart){" "}
               </h4>
-              <ul className="react-project-ul text-justify">
+              <ul className="react-project-ul">
                 <li>
                   Created and established an e-commerce platform, leveraging
                   inspiration from industry leaders Amazon and Flipkart, to
@@ -696,7 +697,8 @@ function App() {
                   JSON Web Tokens (JWT) for authentication and authorization,
                   RESTful API calls for secure data exchange, and local storage
                   encryption to protect sensitive information, ensuring the
-                  confidentiality, integrity, and availability of user data
+                  confidentiality, integrity, and availability of user data. Had
+                  a development duration of 12 days
                 </li>
                 <li style={{ fontWeight: "bold" }}>
                   Username: henry & Password: henry_the_developer
