@@ -503,16 +503,16 @@ function App() {
                   seamlessly add items to their cart list. Additionally, "remove
                   from cart" functionality added using React Context, enabling
                   users to easily remove items from their cart list. Deployed
-                  the website using Vercel
+                  the website using Netlify
                 </li>
                 <li>Spanned a 6-Day development period</li>
               </ul>
             </div>
             <div>
               <marquee behavior="slide" scrollamount="4" width="380px">
-                <a href="https://karthikeya-personal-cosmos-6fl3.vercel.app/">
+                <a href="https://karthikeya-personal-cosmos.netlify.app/">
                   <img
-                    src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1727520804/Screenshot_1072_f7m2hk.png"
+                    src="https://res.cloudinary.com/dnmyyqfhs/image/upload/v1729677835/Screenshot_1081_tar03i.png"
                     alt="Project-1"
                     className="project-image"
                   />
